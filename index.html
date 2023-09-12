@@ -1,25 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rock Paper Scissors Game</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1 class="text-center">Welcome to Rock Paper Scissors Game</h1>
-    <p class="text-center">Choose your move:</p>
-    <div class="buttons" >
-      <button type="button" class="btn btn-outline-danger btn-lg me-md-3" id="rock">&#x1F44A;</button>
-      <button type="button" class="btn btn-outline-success btn-lg me-md-3"id="paper">&#x1f590;</button>
-      <button type="button" class="btn btn-outline-secondary btn-lg me-md-3"id="scissors">&#x270c;</button>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 class="text-center">Welcome to Rock Paper Scissors Game</h1>
+  <div class="container">
+    <div class="game">
+      <p class="text-center">Choose your move:</p>
+      <div class="buttons">
+        <button type="button" class="btn btn-outline-danger btn-lg me-md-3" id="rock">&#x1F44A;</button>
+        <button type="button" class="btn btn-outline-success btn-lg me-md-3" id="paper">&#x1f590;</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg me-md-3" id="scissors">&#x270c;</button>
+      </div>
+      <p id="result" class="text-center my-3"></p>
     </div>
-    <p id="result" class="text-center my-3"></p>
-    <p id="scores" class="text-center">
-      Your score: <span id="user-score">0</span> Computer score: <span id="computer-score">0</span>
-      </p>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-  </body>
+    <div class="leaderboard">
+      <h1 class="text-center my-3">Leaderboard</h1>
+      <div id="leaderboard" class="text-center my-3"></div>
+      <div class="statistics">
+        <h1 class="text-center my-3">Game Stats.</h1>
+        <div id="statistics"></div>
+        <p id="scores" class="text-center my-3">
+          Your score: <span id="user-score">0</span> 
+        </p>
+        <p id="scores" class="text-center my-3">
+          Computer score: <span id="computer-score">0</span>
+        </p>
+        <p id="scores" class="text-center my-3">
+           Winner is : <span id="victory"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
